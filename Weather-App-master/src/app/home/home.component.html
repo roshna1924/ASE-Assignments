@@ -1,0 +1,55 @@
+
+<br><br><br>
+<div class="container col-sm-4 center">
+
+  <div class="info">
+    <h3 class = text-center> City:{{weather.city.name}}</h3>
+    <br>
+    <div class="left-padding">
+      <h5>longitude
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        :&nbsp; {{weather.city.coord.lon}}
+      </h5>
+      <h5>longitude
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        : &nbsp; {{weather.city.coord.lat}}</h5>
+      <h5>Temp
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        : &nbsp; {{weather.list[0].main.temp}}</h5>
+      <h5>tempMax
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        : &nbsp; {{weather.list[0].main.temp_max}}  </h5>
+      <h5>tempMin
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        : &nbsp; {{weather.list[0].main.temp_min}}</h5>
+      <h5>Weather description
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        : {{weather.list[0].weather[0].description}}</h5>
+      <h5>humidity
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        : &nbsp; {{weather.list[0].main.humidity}}</h5>
+      <h5>Pressure
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        : &nbsp; {{weather.list[0].main.pressure}}</h5>
+      <h5>Wind Speed
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        : &nbsp; {{weather.list[0].wind.speed}}</h5>
+    </div>
+  </div>
+
+  <br><br>
+<!--  <button class="btn btn-outline-info" (click)="goSetting()">Back</button>-->
+  <div class="text-center">
+    <button class="btn btn-success" (click)="goHourly()">Hourly Forecast</button>
+    <button class="btn btn-success" (click)="goSetting()">Back</button>
+  </div>
+
+</div>

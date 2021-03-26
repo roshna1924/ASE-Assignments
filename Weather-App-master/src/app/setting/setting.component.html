@@ -1,0 +1,31 @@
+<div class="full-height">
+  <div class="container containermain">
+    <br><br><br><br><br>
+    <div class = "row">
+      <div class="col-sm-5 center">
+        <h3 class="text-center "> Enter City and State Code </h3>
+
+        <form >
+          <div class="form-group">
+            <br>
+            &nbsp;
+            <h5> City</h5>
+            <input type="text"  class="form-control"  name="city" [(ngModel)]="city"   >
+
+            &nbsp;
+            <h5 > State Code</h5>
+            <input type="text"  class="form-control" name="code" [(ngModel)]="code"   >
+
+
+          </div>
+
+          <br>
+          <div class="text-center">
+            <button class="btn btn-success" (click)="saveForm()">Enter</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+.center {
+  margin: auto;
+  width: 60%;
+  border: 2px solid #73AD21;
+  padding: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+html, body {
+  height: 100%;
+  background: url('https://images.pexels.com/photos/133953/pexels-photo-133953.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+
+.full-height {
+  height: 100%;
+}
